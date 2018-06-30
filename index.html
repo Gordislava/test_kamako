@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700%7CNoto+Serif:400i,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/peppermint.suggested.css">
   </head>
   <body>
     <header class="main-header">
@@ -48,14 +49,27 @@
     </header>
     <main class="container">
       <h1>Пусть всегда будет вкусно!</h1>
-      <div class="slider">
-        <div class="slide">
-          <h2>Кулинарный клуб</h2>
-          <p>Создай свой кулинарный шедевр вместе с соусами Камако</p>
-          <a href="club.html" class="slider-button">Узнать больше</a>
-          <!-- <button class="slider-button-back" type="button"></button>
-          <button class="slider-button-next" type="button"></button> -->
+      <div class="slider-wrapper">
+        <div class="slider peppermint peppermint-active"
+        id="peppermint">
+          <div class="slide slide1">
+            <h2>Кулинарный клуб</h2>
+            <p>Создай свой кулинарный шедевр вместе с соусами Камако</p>
+            <a href="club.html" class="slider-button">Узнать больше</a>
+          </div>
+          <div class="slide slide2">
+            <h2>Кулинарный клуб</h2>
+            <p>Создай свой кулинарный шедевр вместе с соусами Камако</p>
+            <a href="club.html" class="slider-button">Узнать больше</a>
+          </div>
+          <div class="slide slide3">
+            <h2>Кулинарный клуб</h2>
+            <p>Создай свой кулинарный шедевр вместе с соусами Камако</p>
+            <a href="club.html" class="slider-button">Узнать больше</a>
+          </div>
         </div>
+          <button class="slider-arrow-left" id="left-arr" type="button"></button>
+          <button class="slider-arrow-right" id="right-arr" type="button"></button>
       </div>
       <section class="popup">
         <p>КАМАКО - ведущий производитель майонезов, соусов и кетчупов в Беларуси на протяжении 20 лет</p>
@@ -77,5 +91,7 @@
           </button>
       </section>
     </main>
+    <script src="js/peppermint.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
