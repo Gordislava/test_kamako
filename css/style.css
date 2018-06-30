@@ -44,8 +44,11 @@ input[type="radio"].visually-hidden {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 45px;
 }
 
@@ -55,15 +58,23 @@ input[type="radio"].visually-hidden {
 
 .header-wrapper {
   margin-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 800px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 0px;
   margin-bottom: 25px;
   margin-right: 40px;
@@ -94,9 +105,14 @@ input[type="radio"].visually-hidden {
 .lang-list {
   width: 80px;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 40px;
 }
 
@@ -153,8 +169,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin-top: 12px;
 }
 
-.container {
-  background-image: url(../img/KAMAKO_0916.jpg);
+.promo {
+  background-image: url("../img/bgr.jpg");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 450px;
@@ -180,10 +196,17 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border-radius: 3px;
   opacity: 0.95;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .slide h2 {
@@ -196,25 +219,28 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   position: relative;
 }
 
-.slide h2::before {
+.slide1 h2::before {
   content: "";
-  position: absolute;
   width: 10px;
   height: 2px;
   background-color: #fab330;
-  top: 45px;
-  left: 0px;
+  display: inline-block;
+  margin: 0px 10px 4px 0px;
+
 }
 
-.slide h2::after {
+.slide1 h2::after {
   content: "";
-  position: absolute;
   width: 10px;
   height: 2px;
   background-color: #fab330;
   top: 45px;
   right: 0px;
+  display: inline-block;
+  margin: 0px 0px 4px 10px;
 }
+
+
 
 .slide p {
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -229,7 +255,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .slider-button {
   display: inline-block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   vertical-align: baseline;
   width: 190px;
   background-color: #fab330;
@@ -258,7 +285,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border: none;
   background-image: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
-  transform: translateY(-50%) rotate(180deg);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
   background-size: contain;
   top: 40%;
   left: 0px;
@@ -288,8 +317,44 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #663399;
 }
 
+.slide2 h2::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #663399;
+  display: inline-block;
+  margin: 0px 10px 4px 0px;
+}
+
+.slide2 h2::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #663399;
+  display: inline-block;
+  margin: 0px 0px 4px 10px;
+}
+
 .slide3 h2 {
   color: #339999;
+}
+
+.slide3 h2::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #339999;
+  display: inline-block;
+  margin: 0px 10px 4px 0px;
+}
+
+.slide3 h2::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #339999;
+  display: inline-block;
+  margin: 0px 0px 4px 10px;
 }
 
 .popup {
